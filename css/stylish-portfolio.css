@@ -1,0 +1,178 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* Side Menu */
+
+#menu-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #333333;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+/* загальні параметри списку у menu*/
+.menu {
+    position: absolute; 
+    top: 5em;
+    width: 250px;
+    padding: 0; /* відстань білої колонки від краю */
+}
+
+/* параметри списку menu*/
+.menu a {
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    display: block;
+    width: 100%;
+}
+
+/* тінь при наведенні */
+.menu li {
+    text-indent: 20px;  /* відступ тексту */
+    line-height: 60px;  /* відстань між лініями тексту */
+    box-shadow: 3px 0 #FFFFFF inset;    /* розмір блоку, його колір і перенаправлення тіні усередину */
+    margin-bottom: 5px;
+    padding-left: .5em;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+/* відступи при наведенні */
+.menu a:hover {
+    margin-left: 1em;   /* зміщення вліво */
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.menu li:hover { box-shadow: 250px 0 rgba(52,152,219,.2)inset; }
+
+/*зміщення menu-wrapper після click*/
+#menu-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+#open-icon {
+    color: #000000;
+    z-index: 2000;
+    position: fixed;
+    right: 0;
+    margin: 2px 2px 0 0;
+}
+
+#open-icon:hover,
+#open-icon.active {
+    color: #ffffff;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+/* Header */
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../static/background.jpg) no-repeat center center fixed;
+    color: #ffffff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#icons {
+    color: #ffffff;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px;
+}
+
+#icons:hover {
+    border-radius: 20px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+
+/* Portfolio */
+
+/* приєднуємо усі зображення */
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+   padding-right: 0;
+   padding-left: 0;
+}
+
+.img-portfolio {
+    position: relative;
+    margin: 0 auto; /* вирівнювання по-центру */
+}
+
+.img-portfolio:hover {
+    opacity: 0.6;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+#about_me {
+    background-color: #1b1d1d;
+    text-align: center;
+}
+
+#menu_wrapper .menu a {
+    text-decoration: none;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: yellow;
+}
+
+table { 
+    width: 100%; /* Ширина таблицы */
+    border: 4px double white; /* Рамка вокруг таблицы */
+    border-collapse: collapse; /* Отображать только одинарные линии */
+}
+

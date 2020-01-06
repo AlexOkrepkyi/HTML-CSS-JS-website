@@ -1,0 +1,264 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#text1 {
+    z-index: 1;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    top: 20%;
+    font-size: 2em;
+    display: none;
+}
+
+#text2 {
+    z-index: 1;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    top: 60%;
+    font-size: 2em;
+    display: none;
+}
+
+
+/* Background images are set within the HTML using inline CSS, not here */
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* Side Menu */
+#menu-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    margin-right: -300px;
+    overflow-y: auto;
+    background: #333333;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+/* загальні параметри списку у menu*/
+.menu {
+    position: absolute; 
+    top: 5em;
+    width: 300px;
+    padding: 0; /* відстань білої колонки від краю */
+}
+
+/* параметри списку menu*/
+.menu a {
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+}
+
+/* тінь при наведенні */
+.menu li {
+    text-indent: 20px;  /* відступ тексту */
+    line-height: 60px;  /* відстань між лініями тексту */
+    box-shadow: 3px 0 #FFFFFF inset;    /* розмір блоку, його колір і перенаправлення тіні усередину */
+    margin-bottom: 5px;
+    padding-left: .5em;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+/* відступи при наведенні */
+.menu a:hover {
+    margin-left: 1em;   /* зміщення вліво */
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.menu li:hover { 
+    box-shadow: 250px 0 #888888 inset; 
+}
+
+/*зміщення menu-wrapper після click*/
+#menu-wrapper.active {
+    right: 300px;
+    width: 300px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+#open-icon {
+    z-index: 2000;
+    color: #ffffff;
+    background: #212121;
+    position: fixed;
+    right: 0;
+    margin: 2px 2px 0 0;
+}
+
+#open-icon:hover {
+    background: #313131;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+
+/* Header */
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center fixed;
+    color: #ffffff;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+/* Portfolio */
+
+/* приєднуємо усі зображення */
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+   padding-right: 0;
+   padding-left: 0;
+}
+
+#image {
+    overflow: hidden;
+}
+
+.img-portfolio {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+}
+
+.img-portfolio:hover {
+    opacity: 0.2; 
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.video-container {
+    background-color: #1b1d1d;
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Footer */
+
+footer {
+    background: #212121;
+    text-align: center;
+    font-size: 2em;
+    border-top: solid #ffffff 1px;
+}
+
+.fa-stack {
+    margin: 40px 10px;
+}
+
+#icons_facebook {
+    background: #ffffff;
+    color: #212121;
+    border-radius: 100px;
+}
+
+#icons_facebook:hover {
+    color: #ffffff;
+    background: #3b5998;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+#icons_instagram {
+    background: #ffffff;
+    color: #212121;
+    border-radius: 100px;
+}
+
+#icons_instagram:hover {
+    color: #ffffff;
+    background: #3f729b;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+#icons_vk {
+    background: #ffffff;
+    color: #212121;
+    border-radius: 100px;
+}
+
+#icons_vk:hover {
+    color: #ffffff;
+    background: #45668e;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+#icons_etsy {
+    background: #ffffff;
+    color: #212121;
+    border-radius: 100px;
+}
+
+#icons_etsy:hover {
+    color: #ffffff;
+    background: #d5641c;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.hero-unit {
+    color: #ffffff;
+}
